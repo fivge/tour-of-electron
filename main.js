@@ -1,5 +1,4 @@
-const { app, BrowserWindow } = require('electron');
-
+const { app, BrowserWindow, ipcMain } = require('electron');
 const path = require('path');
 
 const createWindow = () => {
@@ -7,13 +6,14 @@ const createWindow = () => {
     width: 800,
     height: 600,
     webPreferences: {
-      preload: path.join(__dirname, 'preload.js')
       // __dirname 字符串指向当前正在执行脚本的路径 (在本例中，它指向你的项目的根文件夹)。
-      // path.join API 将多个路径联结在一起，创建一个跨平台的路径字符串。
-    }
+      preload: path.join(__dirname, 'main-app/preload.js'),
+    },
   });
 
-  win.loadFile('index.html');
+  ipcMain.handle('ping', () => 'pong');
+
+  win.loadFile('./renderer-app/dist/index.html');
 };
 
 // 窗口无法在 ready 事件前创建
