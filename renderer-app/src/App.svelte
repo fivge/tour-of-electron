@@ -4,6 +4,8 @@
   import Counter from './lib/Counter.svelte';
   import Foo from './lib/Foo2.svelte';
   import Nested from './lib/Nested.svelte';
+  import Events from './lib/Events.svelte';
+  import Bindings from './lib/Bindings.svelte';
 
   const pkg = {
     answer: '62',
@@ -30,6 +32,14 @@
 
   <div class="component">
     <Nested {...pkg} />
+  </div>
+
+  <div class="component">
+    <Events />
+  </div>
+
+  <div class="component">
+    <Bindings />
   </div>
 
   <p>Check out, the official Svelte app framework powered by Vite!</p>

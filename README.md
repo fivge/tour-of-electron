@@ -37,9 +37,14 @@ https://github.com/maximegris/angular-electron
 
 - https://arwes.dev/design/
   https://github.com/arwes/arwes
+  
 - https://augmented-ui.com/
   https://github.com/propjockey/augmented-ui
+  
+  https://codepen.io/collection/PYMbMb?cursor=eyJjb2xsZWN0aW9uX2lkIjoiUFlNYk1iIiwiY29sbGVjdGlvbl90b2tlbiI6bnVsbCwibGltaXQiOjQsIm1heF9pdGVtcyI6MTUsIm9mZnNldCI6MCwicGFnZSI6MSwic29ydF9ieSI6InBvc2l0aW9uIiwic29ydF9vcmRlciI6IkFzYyJ9
+  
 - https://github.com/hperrin/svelte-material-ui
+
 - https://www.jianshu.com/p/cc6385d10d38
 
 #### windows API
